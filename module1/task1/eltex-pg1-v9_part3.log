@@ -1,0 +1,112 @@
+=== РАЗДЕЛ 3 ===
+Время начала: Wed Oct 15 07:17:13 PM +07 2025
+
+=== Задание 2: Создание иерархии каталогов D1/D2/D3 ===
+D1
+D1/D2
+D1/D2/D3
+
+=== Задание 3: Создание файла file.txt в D2 ===
+total 8
+4 drwxr-xr-x 2 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:18 D3
+4 -rw-r--r-- 1 eltex-pg1-v9 eltex-pg1-v9   36 Oct 15 19:21 file.txt
+
+=== Задание 4: Добавление текста в file.txt ===
+произвольный текст
+
+=== Задание 6: Доказательство успешного создания ссылок ===
+Содержимое каталога D3:
+total 12
+drwxr-xr-x 2 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:43 .
+drwxr-xr-x 3 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:19 ..
+-rw-r--r-- 2 eltex-pg1-v9 eltex-pg1-v9   36 Oct 15 19:21 file_hardlink.txt
+lrwxrwxrwx 1 eltex-pg1-v9 eltex-pg1-v9   17 Oct 15 19:43 file_symlink.txt -> ../../D2/file.txt
+
+inode файла и ссылок:
+655546 D1/D2/D3/file_hardlink.txt
+655526 D1/D2/D3/file_symlink.txt
+655546 D1/D2/file.txt
+
+содержимое ссылок:
+жесткая ссылка:
+произвольный текст
+символическая ссылка:
+произвольный текст
+
+=== Задание 7: Перемещение file.txt в D1 ===
+Содержимое D1 после перемещения:
+total 16
+drwxr-xr-x  3 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:50 .
+drwx------ 16 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:44 ..
+drwxr-xr-x  3 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:50 D2
+-rw-r--r--  2 eltex-pg1-v9 eltex-pg1-v9   36 Oct 15 19:21 file.txt
+
+=== Задание 8: Проверка ссылок ===
+Проверка жесткой ссылки:
+произвольный текст
+Проверка символической ссылки:
+No such file or directory (ссылка не работает тк после перемещения файла путь к нему изменился, а символическая ссылка хранит путь к файлу, не данные => теперь она хранит несуществующий путь)
+Статус ссылок:
+total 12
+drwxr-xr-x 2 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:43 .
+drwxr-xr-x 3 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:50 ..
+-rw-r--r-- 2 eltex-pg1-v9 eltex-pg1-v9   36 Oct 15 19:21 file_hardlink.txt
+lrwxrwxrwx 1 eltex-pg1-v9 eltex-pg1-v9   17 Oct 15 19:43 file_symlink.txt -> ../../D2/file.txt
+
+=== Задание 9: Удаление каталога D2 ===
+каталог D2 удален
+Содержимое D1 после удаления:
+total 12
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:55 .
+drwx------ 16 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 15 19:44 ..
+-rw-r--r--  1 eltex-pg1-v9 eltex-pg1-v9   36 Oct 15 19:21 file.txt
+
+=== Задание 10: Поиск файлов >20МБ ===
+/usr/bin/x86_64-linux-gnu-lto-dump-12
+/usr/lib/gcc/x86_64-linux-gnu/12/lto1
+/usr/lib/gcc/x86_64-linux-gnu/12/cc1
+/usr/lib/x86_64-linux-gnu/libicudata.so.72.1
+/proc/kcore
+/boot/initrd.img-6.1.0-31-amd64
+/boot/initrd.img-6.1.0-32-amd64
+/boot/initrd.img-6.1.0-40-amd64
+/var/cache/apt/srcpkgcache.bin
+/var/cache/apt/pkgcache.bin
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_binary-amd64_Packages
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_source_Sources
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_i18n_Translation-en
+
+Проверка размера найденных файлов:
+/usr/bin/x86_64-linux-gnu-lto-dump-12: 31M
+/usr/lib/gcc/x86_64-linux-gnu/12/lto1: 31M
+/usr/lib/gcc/x86_64-linux-gnu/12/cc1: 32M
+/usr/lib/x86_64-linux-gnu/libicudata.so.72.1: 30M
+/proc/kcore: 0
+/boot/initrd.img-6.1.0-31-amd64: 33M
+/boot/initrd.img-6.1.0-32-amd64: 33M
+/boot/initrd.img-6.1.0-40-amd64: 33M
+/var/cache/apt/srcpkgcache.bin: 38M
+/var/cache/apt/pkgcache.bin: 38M
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_binary-amd64_Packages: 48M
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_source_Sources: 49M
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_i18n_Translation-en: 32M
+
+=== Задания 11-12: Поиск измененных файлов за 24 часа ===
+/home/eltex-pg1-v9/eltex-pg1-v9_part3_gt20M.log
+/home/eltex-pg1-v9/.lesshst
+/home/eltex-pg1-v9/D1/file.txt
+/home/eltex-pg1-v9/.bash_history
+/home/eltex-pg1-v9/hardcopy.1
+/home/eltex-pg1-v9/eltex-pg1-v9_part3.log
+
+=== Задание 13: Каталог команды find ===
+/usr/bin/find
+
+=== Задание 14: Тип файла find ===
+/usr/bin/find: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5545a6c7162d325fbe5ffabcbfe4e5521b66ce70, for GNU/Linux 3.2.0, stripped
+
+=== Задание 15: Тип файлов /boot/initrd.img* ===
+/boot/initrd.img-6.1.0-31-amd64: ASCII cpio archive (SVR4 with no CRC)
+/boot/initrd.img-6.1.0-32-amd64: ASCII cpio archive (SVR4 with no CRC)
+/boot/initrd.img-6.1.0-40-amd64: ASCII cpio archive (SVR4 with no CRC)
+

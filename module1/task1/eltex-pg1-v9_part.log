@@ -1,0 +1,195 @@
+=== Начало сессии Sun Oct 12 06:07:47 PM +07 2025 ===
+=====================================================
+=== Задание 2: Дополнение команд ls  ===
+=== Команды начинающиеся на 'ls'  ===
+ls           lsb_release  lsinitramfs  lslocks      lsmod        lspci
+lsattr       lscpu        lsipc        lslogins     lsns         lsusb
+lsblk        lsfd         lsirq        lsmem        lsof
+=== Задание 3: Дополнение переменных HIST  ===
+=== Переменные начинающиеся на HIST  ===
+HISTCMD       HISTCONTROL   HISTFILE      HISTFILESIZE  HISTSIZE
+=== Задание 4: Размер истории  ===
+HISTSIZE: 1000  HISTFILESIZE: 2000
+=== Задание 5: Скрытые файлы  ===
+-rw------- 1 eltex-pg1-v9 eltex-pg1-v9 1871 Oct 12 02:29 /home/eltex-pg1-v9/.bash_history
+-rw-r--r-- 1 eltex-pg1-v9 eltex-pg1-v9  220 Mar 30  2024 /home/eltex-pg1-v9/.bash_logout
+-rw-r--r-- 1 eltex-pg1-v9 eltex-pg1-v9 3526 Mar 30  2024 /home/eltex-pg1-v9/.bashrc
+-rw-r--r-- 1 eltex-pg1-v9 eltex-pg1-v9  807 Mar 30  2024 /home/eltex-pg1-v9/.profile
+-rw------- 1 eltex-pg1-v9 eltex-pg1-v9  782 Oct 12 01:58 /home/eltex-pg1-v9/.viminfo
+
+/home/eltex-pg1-v9/.config:
+total 12
+drwx------ 3 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 12 00:45 .
+drwx------ 3 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 12 19:04 ..
+drwx------ 2 eltex-pg1-v9 eltex-pg1-v9 4096 Oct 12 00:45 procps
+=== Задание 6: Дата в истории  ===
+export HISTTIMEFORMAT=/%m/%y %T 
+=== Последние 5 строк истории с датой ===
+  176  /10/25 20:26:45 cat ~/${USER}_part.log
+  177  /10/25 20:26:56 history
+  178  /10/25 20:28:46 echo "=== Последние 5 строк истории с датой ===" >> ~/${USER}_part.log
+  179  /10/25 20:28:54 cat ~/${USER}_part.log
+  180  /10/25 20:29:17 history 5 >> ~/${USER}_part.log
+=== Задание 7: Автосохранение истории ===
+Sun Oct 12 09:22:11 PM +07 2025
+История до настройки:
+  207  /10/25 21:22:11 date >> ~/${USER}_part.log
+  208  /10/25 21:22:42 echo "История до настройки:" >>  ~/${USER}_part.log
+  209  /10/25 21:22:55 history 3 >>  ~/${USER}_part.log
+eltex-pg1-v9
+История после настройки:
+  211  /10/25 21:24:30 whoami >> ~/${USER}_part.log
+  212  /10/25 21:25:14 echo "История после настройки:" >> ~/${USER}_part.log
+  213  /10/25 21:25:24 history 3 >> ~/${USER}_part.log
+=== Задания 10-12: Работа с переменными  ===
+DATE: 2025-10-12
+TIME: 21:37:48
+DATE_TIME: 2025-10-12 21:37:48
+=== Задание 13: Файлы с цифрами  ===
+/usr/bin/ping4
+/usr/bin/pod2html
+/usr/bin/python3.11
+/usr/bin/ssh-argv0
+/usr/bin/c99-gcc
+/usr/bin/x86_64-linux-gnu-gcc-ar-12
+/usr/bin/base64
+/usr/bin/gcov-dump-12
+/usr/bin/x86_64-linux-gnu-gcc-ranlib-12
+/usr/bin/enc2xs
+/usr/bin/x86_64-linux-gnu-gcc
+/usr/bin/gcov-tool-12
+/usr/bin/x86_64-linux-gnu-gcov-12
+/usr/bin/pod2usage
+/usr/bin/x86_64-linux-gnu-lto-dump
+/usr/bin/x86_64
+/usr/bin/x86_64-linux-gnu-objdump
+/usr/bin/addr2line
+/usr/bin/sha224sum
+/usr/bin/py3versions
+/usr/bin/linux32
+/usr/bin/x86_64-linux-gnu-objcopy
+/usr/bin/bzip2
+/usr/bin/pdb3
+/usr/bin/gcc-12
+/usr/bin/x86_64-linux-gnu-readelf
+/usr/bin/x86_64-linux-gnu-gcov-dump
+/usr/bin/x86_64-linux-gnu-ar
+/usr/bin/grub-mkpasswd-pbkdf2
+/usr/bin/x86_64-linux-gnu-gcov-tool
+/usr/bin/traceroute6.db
+/usr/bin/md5sum
+/usr/bin/bzip2recover
+/usr/bin/grub-menulst2cfg
+/usr/bin/x86_64-linux-gnu-cpp-12
+/usr/bin/x86_64-linux-gnu-size
+/usr/bin/x86_64-linux-gnu-gprofng
+/usr/bin/x86_64-linux-gnu-ld
+/usr/bin/x86_64-linux-gnu-gprof
+/usr/bin/h2xs
+/usr/bin/x86_64-linux-gnu-gcc-ranlib
+/usr/bin/x86_64-linux-gnu-ranlib
+/usr/bin/x86_64-linux-gnu-ld.gold
+/usr/bin/x86_64-linux-gnu-as
+/usr/bin/x86_64-linux-gnu-gold
+/usr/bin/pod2text
+/usr/bin/pydoc3
+/usr/bin/x86_64-linux-gnu-nm
+/usr/bin/x86_64-linux-gnu-elfedit
+/usr/bin/x86_64-linux-gnu-strip
+/usr/bin/x86_64-linux-gnu-gcc-nm-12
+/usr/bin/perl5.36.0
+/usr/bin/x86_64-linux-gnu-ld.bfd
+/usr/bin/pydoc3.11
+/usr/bin/x86_64-linux-gnu-gcov-tool-12
+/usr/bin/b2sum
+/usr/bin/c89
+/usr/bin/lto-dump-12
+/usr/bin/x86_64-linux-gnu-cpp
+/usr/bin/x86_64-linux-gnu-lto-dump-12
+/usr/bin/pod2man
+/usr/bin/sha1sum
+/usr/bin/c89-gcc
+/usr/bin/x86_64-linux-gnu-gcc-nm
+/usr/bin/pl2pm
+/usr/bin/ping6
+/usr/bin/h2ph
+/usr/bin/x86_64-linux-gnu-c++filt
+/usr/bin/x86_64-linux-gnu-gcc-ar
+/usr/bin/sha512sum
+/usr/bin/python3
+/usr/bin/x86_64-linux-gnu-gcc-12
+/usr/bin/gcc-ranlib-12
+/usr/bin/x86_64-linux-gnu-gp-display-src
+/usr/bin/base32
+/usr/bin/pygettext3
+/usr/bin/x86_64-linux-gnu-gp-collect-app
+/usr/bin/x86_64-linux-gnu-gcov
+/usr/bin/cpan5.36-x86_64-linux-gnu
+/usr/bin/md5sum.textutils
+/usr/bin/x86_64-linux-gnu-gp-archive
+/usr/bin/sha384sum
+/usr/bin/py3clean
+/usr/bin/x86_64-linux-gnu-gcov-dump-12
+/usr/bin/pdb3.11
+/usr/bin/perl5.36-x86_64-linux-gnu
+/usr/bin/c99
+/usr/bin/x86_64-linux-gnu-strings
+/usr/bin/linux64
+/usr/bin/x86_64-linux-gnu-gp-display-html
+/usr/bin/pygettext3.11
+/usr/bin/systemd-id128
+/usr/bin/x86_64-linux-gnu-dwp
+/usr/bin/gcov-12
+/usr/bin/i386
+/usr/bin/bunzip2
+/usr/bin/cpp-12
+/usr/bin/x86_64-linux-gnu-gp-display-text
+/usr/bin/x86_64-linux-gnu-addr2line
+/usr/bin/py3compile
+/usr/bin/grub-syslinux2cfg
+/usr/bin/traceroute6
+/usr/bin/diff3
+/usr/bin/gcc-nm-12
+/usr/bin/gcc-ar-12
+/usr/bin/sha256sum
+/usr/sbin/dumpe2fs
+/usr/sbin/e2fsck
+/usr/sbin/mkfs.ext3
+/usr/sbin/e2freefrag
+/usr/sbin/e2undo
+/usr/sbin/e2scrub_all
+/usr/sbin/tune2fs
+/usr/sbin/e2image
+/usr/sbin/e2label
+/usr/sbin/e4defrag
+/usr/sbin/e2mmpstatus
+/usr/sbin/mke2fs
+/usr/sbin/mkfs.ext4
+/usr/sbin/mkfs.ext2
+/usr/sbin/e4crypt
+/usr/sbin/killall5
+/usr/sbin/fsck.ext3
+/usr/sbin/fsck.ext2
+/usr/sbin/e2scrub
+/usr/sbin/resize2fs
+/usr/sbin/fsck.ext4
+/usr/sbin/update-grub2
+=== Задание 14: Настройка приглашения  ===
+Установлен PS1: \u@\h-$(date +%H:%M)> 
+=== Задание 15: Сохранение приглашения  ===
+PS1 сохранен в  ~/.bashrc
+=== Задание 16: Создание каталогов по месяцам  ===
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-01
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-02
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-03
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-04
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-05
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-06
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-07
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-08
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-09
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-10
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-11
+drwxr-xr-x  2 eltex-pg1-v9 eltex-pg1-v9  4096 Oct 12 22:48 2025-12
+=== КОНЕЦ РАЗДЕЛА 2  ===
+Время завершения: Sun Oct 12 11:05:26 PM +07 2025
