@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "stdio.h": "c"
+    },
+    "debug.onTaskErrors": "showErrors",
+    "debug.internalConsoleOptions": "openOnSessionStart", 
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.minimap.enabled": false
+}
