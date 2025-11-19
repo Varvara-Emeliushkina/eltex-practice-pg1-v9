@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "phonebook.h": "c",
+        "calculator.h": "c"
+    },
+    "makefile.configureOnOpen": true,
+    "makefile.buildLog": "build.log",
+    "debug.onTaskErrors": "showErrors",
+    "debug.internalConsoleOptions": "openOnSessionStart", 
+    "debug.allowBreakpointsEverywhere": true,
+    "C_Cpp.errorSquiggles": "disabled"
+    
+}
