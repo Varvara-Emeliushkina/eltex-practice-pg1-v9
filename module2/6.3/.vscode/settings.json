@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "phonebook.h": "c",
+        "calculator.h": "c"
+    },
+    "debug.onTaskErrors": "showErrors",
+    "debug.internalConsoleOptions": "openOnSessionStart", 
+    "debug.allowBreakpointsEverywhere": true,
+    "C_Cpp.errorSquiggles": "disabled"
+    
+}

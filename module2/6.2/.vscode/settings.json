@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdlib.h": "c"
+    },
+    "debug.onTaskErrors": "showErrors",
+    "debug.internalConsoleOptions": "openOnSessionStart", 
+    "debug.allowBreakpointsEverywhere": true
+}
